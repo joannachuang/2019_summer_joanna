@@ -4,14 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e87a2f2e-5537-46f7-9a84-95851a73c6a9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Code_20190516_CTYang_toJoanna_read_html_meeting_module2.py</StartupFile>
-    <SearchPath>..\..\..\pylily</SearchPath>
+    <StartupFile>module1_2.py</StartupFile>
+    <SearchPath>..\..\..\pylily;C:\cygwin64\home\ctyang\pylily</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>0409</Name>
     <RootNamespace>0409</RootNamespace>
     <IsWindowsApplication>False</IsWindowsApplication>
-    <InterpreterId>Global|VisualStudio|OSGeo4w64</InterpreterId>
+    <InterpreterId>Global|VisualStudio|osgeo4w64</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,7 +38,7 @@
     <Compile Include="_0409.py" />
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="Global|VisualStudio|OSGeo4w64" />
+    <InterpreterReference Include="Global|VisualStudio|osgeo4w64" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

@@ -10,6 +10,7 @@ df = read_pdf('''d:/107_taipei_traffic.pdf''', pages='1-7', pandas_options={'hea
 #java問題，Error: Error occurred during initialization of VM
 #Corrupted ZIP library: C:\OSGeo4W64\bin\zip.dll
 #Command '['java', '-jar', 'C:\\OSGeo4W64\\apps\\Python37\\lib\\site-packages\\tabula\\tabula-1.0.2-jar-with-dependencies.jar', '--pages', '1-7', 'd:/107_taipei_traffic.pdf']' returned non-zero exit status 1.
+# coll1
 
 
 for ind, row in df.iterrows():
@@ -28,7 +29,8 @@ for ind, row in df.iterrows():
     arg1.to_file(file)
     print (target, file)
 
-read_html to_csv
+#read_html to_csv
+
 def table_sheet2_b(first_tb):
     second_tb = first_tb
     second_tb = pandas.Dataframe()
