@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e87a2f2e-5537-46f7-9a84-95851a73c6a9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>module1_2.py</StartupFile>
+    <StartupFile>section_pce.py</StartupFile>
     <SearchPath>..\..\..\pylily;C:\cygwin64\home\ctyang\pylily</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -34,6 +34,7 @@
     <Compile Include="module2_2.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="section_pce.py" />
     <Compile Include="userargument.py" />
     <Compile Include="_0409.py" />
   </ItemGroup>
