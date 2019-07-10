@@ -11,19 +11,25 @@ import os
 
 df = pd.read_html('''https://taipeicity.github.io/traffic_realtime/''', header = 0)
 
-#for i in range(0, len(df)):   
-#    target = '''https://tcgbusfs.blob.core.windows.net/{0}.gz'''
+for i in range(0, len(df)):   
+    target = '''https://tcgbusfs.blob.core.windows.net/{0}.gz'''
 
-#    link = df[i].filter(like='連結').columns
-#    name = df[i].filter(regex='城市|說明').columns
-#    df[i]['說明'] = df[i][name].apply(lambda x: ''.join(x), axis=1)
+    link = df[i].filter(like='連結')
+    city = df[i].filter(like='城市')
+    name = df[i].filter(like='說明')
 
-#    for j in range(len(df[i][link])):
-#        target = target.format (df[i]['說明'].loc[j])  
-#        file = '''d:/0702/{0}.gz'''.format(df[i]['說明'].loc[j])
-#        arg1 =  url.url_string(target)
-#        arg1.to_file(file)
-#        print (target, file)
+
+    for j in range(len(link)):
+        target  = link.loc[j].values[0]
+        n1      = city.loc[j].values[0] if not city.empty  else '' 
+        n2      = name.loc[j].values[0]
+
+        file = '''d:/0702/{0}{1}.gz'''.format(n1 , n2)
+
+        arg1 =  url.url_string(target)
+        arg1.to_file(file)
+
+        print (target, file)
 
 
 path = '''d:/0702'''
