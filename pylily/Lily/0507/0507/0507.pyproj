@@ -2,16 +2,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>e87a2f2e-5537-46f7-9a84-95851a73c6a9</ProjectGuid>
+    <ProjectGuid>6c26a839-4538-4351-b521-c2911b709ea7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>0703.py</StartupFile>
-    <SearchPath>..\..\..\pylily;C:\cygwin64\home\ctyang\pylily</SearchPath>
+    <StartupFile>cook_reposrt.py</StartupFile>
+    <SearchPath>..\..\..\..\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>0409</Name>
-    <RootNamespace>0409</RootNamespace>
+    <Name>0507</Name>
+    <RootNamespace>0507</RootNamespace>
     <IsWindowsApplication>False</IsWindowsApplication>
-    <InterpreterId>Global|VisualStudio|osgeo4w64</InterpreterId>
+    <InterpreterId>Global|VisualStudio|OSGeo4w64</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,28 +22,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="0703.py" />
-    <Compile Include="0708.py" />
-    <Compile Include="0709.py" />
-    <Compile Include="0710_road_latlng_cp.py" />
-    <Compile Include="20190423_tra.py" />
-    <Compile Include="Code_20190516_CTYang_toJoanna_read_html_meeting_module2.py" />
-    <Compile Include="module1_2.py" />
+    <InterpreterReference Include="Global|VisualStudio|OSGeo4w64" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cook_reposrt.py" />
     <Compile Include="module1.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="module2.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="module2_2.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="section_pce.py" />
-    <Compile Include="userargument.py" />
-    <Compile Include="_0409.py" />
-  </ItemGroup>
-  <ItemGroup>
-    <InterpreterReference Include="Global|VisualStudio|osgeo4w64" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
